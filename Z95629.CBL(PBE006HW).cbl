@@ -103,7 +103,7 @@
                  SET WS-FUNC-DELETE TO TRUE
               WHEN OTHER
                  MOVE 99 TO WS-SUB-RC
-                 MOVE 'INVALID SUB-TYPE: ' TO WS-SUB-DESC
+                 MOVE 'INVALID SUB-TYPE ' TO WS-SUB-DESC
                  PERFORM H300-PROCESS-OUTPUT
                  PERFORM H999-PROGRAM-EXIT
            END-EVALUATE.
